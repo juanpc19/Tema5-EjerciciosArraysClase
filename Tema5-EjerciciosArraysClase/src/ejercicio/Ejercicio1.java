@@ -7,7 +7,7 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		
-		int n; //Declaro variable en la que guardare la longitud de la array
+		int n; //Declaro variable en la que guardare la longitud del array
 		
 		int m; //Declaro variable en la que guardare el valor que deseo dar a los elementos del array 
 
