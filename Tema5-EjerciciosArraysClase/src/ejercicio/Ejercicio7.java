@@ -7,8 +7,10 @@ public class Ejercicio7 {
 
 	public static void main(String[] args) {
 		
+		//array del participante
 		int primitivaParticipante[] = new int [6];
 		
+		//array del sorteo
 		int primitivaSorteo[] = new int [6];
 		
 		Scanner dogma = new Scanner(System.in);
@@ -39,16 +41,19 @@ public class Ejercicio7 {
 			}
 		}
 		
+		//para testeo
 		System.out.println(Arrays.toString(primitivaSorteo));
 		
 		Arrays.sort(primitivaSorteo);
 		
+		//para testeo
 		System.out.println(Arrays.toString(primitivaSorteo));
 		
 		for (int posicion : primitivaParticipante) {
 			
-			Arrays.binarySearch(primitivaSorteo, primitivaSorteo[0], primitivaSorteo.length-1,  posicion);		
-		
+			Arrays.binarySearch(primitivaSorteo, primitivaSorteo[0], primitivaSorteo.length-1,  posicion);	
+			
+		//Arrays.binarySearch(primitivaSorteo, posicion);	
 		}
 		
 		dogma.close();
