@@ -39,10 +39,11 @@ public class Ejercicio7 {
 		
 		//bucle para dar valor random entre 1 y 49 a array primitivaSorteo
 		for (int i = 0; i <= primitivaSorteo.length - 1; i++) {
-
+			//Creacion de variable que contiene el valor del numero random creado para la iteracion
 			int numeroRandom = (int) (Math.random()*50);
-
+			//Establezco la condicion si numeroRandom igual a 0 
 			if (numeroRandom == 0) {
+				//que de cumplirse hara un continue repitiendo la iteracion del bucle con otro numeroRandom
 				continue;
 
 			} else {
@@ -51,8 +52,8 @@ public class Ejercicio7 {
 		}
 
 		// para testeo
+		
 		// System.out.println(Arrays.toString(primitivaSorteo));
-
 		Arrays.sort(primitivaSorteo);
 
 		// para testeo
@@ -66,15 +67,18 @@ public class Ejercicio7 {
 		 * 
 		 * // Arrays.binarySearch(primitivaSorteo, posicion); }
 		 */
-
+		
+		//for para comprobar arrays
 		for (int i = 0; i < primitivaSorteo.length - 1; ++i) {
 			if (primitivaSorteo[i] == primitivaParticipante[i]) {
+				//contador para contar coincidencias
 				contador++;
 			}
 		}
-
+		//print de contador
 		System.out.println(contador);
-
+		
+		//cierro escaner
 		dogma.close();
 	}
 
